@@ -1,0 +1,229 @@
+header,
+section,
+footer {
+  max-width: 1920px;
+  margin-inline: auto;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  padding: 24px;
+}
+
+header {
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--contrast-hue);
+}
+
+header > img {
+  border-radius: 50%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+main {
+  display: grid;
+  text-align: center;
+  place-items: center;
+  gap: 24px;
+}
+
+main > img {
+  margin: 64px 0 0 0;
+}
+
+main > hgroup {
+  display: grid;
+  padding: 28px 0 0 0;
+  position: relative;
+}
+
+main > hgroup > h1 {
+  font-size: 3.2rem;
+}
+
+main > hgroup > h2 {
+  font-size: 2.8rem;
+}
+
+main > hgroup > img {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-20%);
+}
+
+#menus article {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+#menus article p:last-child {
+  text-align: center;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+#menus article strong {
+  font-size: 24px;
+  font-weight: 600;
+  color: oklch(from var(--accent) l calc(c + 0.1) h);
+}
+
+.menu-list {
+  --card-size: 220px;
+}
+
+#sandwichs > h2 {
+  margin: 0 0 64px 0;
+}
+
+.card-list {
+  margin-block: unset;
+  padding-inline-start: unset;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-size), 1fr));
+  gap: 32px;
+}
+
+.card-list > li {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  grid-auto-rows: 80px 28px auto;
+}
+
+.card-list > li > h3 {
+  justify-self: left;
+}
+
+.recipe {
+  text-align: left;
+  text-wrap: balance;
+}
+
+.card-list > li img {
+  grid-column: 1 / span 2;
+  transform-origin: bottom right;
+  transform: translate(-48px, -48px);
+}
+
+/* #sandwichs {
+  padding: 0 100px;
+} */
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-container > img {
+  position: absolute;
+  top: 0px;
+  left: 32px;
+}
+
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 700px;
+  overflow: hidden;
+  display: flex;
+}
+
+.carousel > * {
+  flex: 0 0 100%;
+}
+
+.carousel .group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+
+.carousel .group img {
+  object-fit: contain;
+}
+
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+.carousel > .group > li {
+  width: 100%;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.satisfaction > hgroup {
+  display: grid;
+  gap: 24px;
+  margin: 0 10vw;
+}
+
+.satisfaction > hgroup > a {
+  font-weight: bold;
+}
+
+footer {
+  grid-template-columns: repeat(3, 1fr);
+  place-items: start;
+}
+
+footer > h2 {
+  grid-column: 1 / span 3;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  main > img {
+    width: 95vw;
+    object-fit: cover;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    max-width: 300px;
+  }
+
+  .carousel-container > img {
+    display: none;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
