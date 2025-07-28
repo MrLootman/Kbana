@@ -1,26 +1,115 @@
 import "./page.css";
 import Image from "next/image";
 
+const meals = [
+  {
+    name: "Cuba",
+    price: "8€",
+    recipe: "Jambon de poulet, Emmental, Salade, Tomates",
+    ingredients: ["Jambon de poulet", "Emmental", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_10_rm.png"
+  },
+  {
+    name: "Gwada",
+    price: "8€",
+    recipe: "Jambon, Emmental, Tomates, Salade",
+    ingredients: ["Jambon", "Emmental", "Tomates", "Salade"],
+    image: "/bokits/bokits_cards/meal_11_rm.png"
+  },
+  {
+    name: "Dominica",
+    price: "8€",
+    recipe: "Saucisse de poulet, Emmental, Salade, Tomates",
+    ingredients: ["Saucisse de poulet", "Emmental", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_5_rm.png"
+  },
+  {
+    name: "Montserrat",
+    price: "8€",
+    recipe: "Oeuf, Emmental, Tomates, Salade",
+    ingredients: ["Oeuf", "Emmental", "Tomates", "Salade"],
+    image: "/bokits/bokits_cards/meal_6_rm.png"
+  },
+  {
+    name: "Guyana",
+    price: "8€",
+    recipe: "Haricots rouge, Maïs, Avocat, Salade, Tomates",
+    ingredients: ["Haricots rouge", "Maïs", "Avocat", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_7_rm.png"
+  },
+  {
+    name: "Mada",
+    price: "8€",
+    recipe: "Poulet mariné (citron, aïl, persil, oignon), Emmental, Tomates, Salade",
+    ingredients: ["Poulet mariné", "Emmental", "Tomates", "Salade"],
+    image: "/bokits/bokits_cards/meal_8_rm.png"
+  },
+  {
+    name: "Jamaïca",
+    price: "8€",
+    recipe: "Poulet jerk (curcuma, gingembre, aïl, persil), Tomates, Salade",
+    ingredients: ["Poulet jerk", "Tomates", "Salade"],
+    image: "/bokits/bokits_cards/meal_9_rm.png"
+  },
+  {
+    name: "Sainte Lucia",
+    price: "8€",
+    recipe: "Boeuf haché, Tomates, Salade",
+    ingredients: ["Boeuf haché", "Tomates", "Salade"],
+    image: "/bokits/bokits_cards/meal_4_rm.png"
+  },
+  {
+    name: "Haïti",
+    price: "8€",
+    recipe: "Boeuf haché mariné (curcuma, gingembre, aïl, persil), Salade, Tomates",
+    ingredients: ["Boeuf haché mariné", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_11_rm.png"
+  },
+  {
+    name: "Antigua",
+    price: "8€",
+    recipe: "Morue, Salade, Tomates",
+    ingredients: ["Morue", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_9_rm.png"
+  },
+  {
+    name: "Antillaise",
+    price: "8€",
+    recipe: "Boeuf haché, Poulet, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates",
+    ingredients: ["Boeuf haché", "Poulet", "Saucisse de poulet", "Oeuf", "Emmental", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_4_rm.png"
+  },
+  {
+    name: "West Indies",
+    price: "8€",
+    recipe: "Boeuf haché, Jambon, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates",
+    ingredients: ["Boeuf haché", "Jambon", "Saucisse de poulet", "Oeuf", "Emmental", "Salade", "Tomates"],
+    image: "/bokits/bokits_cards/meal_5_rm.png"
+  }
+];
+
+
+// <Image src="/bokits/bokits_cards/meal_11_rm.png" alt="Meal" width="200" height="138" />
+// <h3>Gwada</h3>
+// <p className="price">8€</p>
+// <p className="recipe">Jambon, Emmental, Tomates, Salade</p>
+
 export default function Home() {
   return (
     <>
-      <header>
-        <Image src="/logo.png" alt="logo" width="58" height="58" />
-        <nav>
-          <a href="#menus">Menus</a>
-          <a href="#bokits">Bokits</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
       <main>
-        <hgroup>
+        <header>
           <h1>La Kbana Bokit</h1>
+          <hr />
           <h2>Spécialités Caraïbéennes</h2>
           <Image src="/hibiscus.png" alt="Hibiscus flower" width="100" height="80" />
-        </hgroup>
-        <Image src="/bokits/meal_1.jpg" alt="guadelupean sandwich" width="900" height="600" />
+        </header>
+        <div className="image-container">
+          <Image src="/logo.png" alt="logo" width="220" height="220" />
+          <Image src="/bokits/meal_1.jpg" alt="guadelupean sandwich" width="900" height="600" />
+        </div>
         <section id="menus">
-          <h2>Menu</h2>
+          <h2>Menus</h2>
           <article className="surface outline">
             <p>
               <strong>Pain Bokit ou Agoulou</strong> + <strong>Accompagnement</strong> + <strong>Boisson</strong>
@@ -31,11 +120,31 @@ export default function Home() {
         <section id="sandwichs">
           <h2>Nos plats</h2>
           <ul className="card-list menu-list">
+            {meals.map((el) => {
+              return (
+                <li key={el.name}>
+                  <header>
+                    <Image src={el.image} alt="Meal" width="200" height="138" />
+                    <p className="price">{el.price}</p>
+                  </header>
+                  <hgroup>
+                    <h3>{el.name}</h3>
+                    <p className="recipe">{el.recipe}</p>
+                  </hgroup>
+                </li>
+              )
+            })}
+          </ul>
+          {/* <ul className="card-list menu-list">
             <li>
-              <Image src="/bokits/bokits_cards/meal_10_rm.png" alt="Meal" width="200" height="138" />
-              <h3>Cuba</h3>
-              <p className="price">8€</p>
-              <p className="recipe">Jambon de poulet, Emmental, Salade, Tomates</p>
+              <header>
+                <Image src="/bokits/bokits_cards/meal_10_rm.png" alt="Meal" width="200" height="138" />
+                <p className="price">8€</p>
+              </header>
+              <hgroup>
+                <h3>Cuba</h3>
+                <p className="recipe">Jambon de poulet, Emmental, Salade, Tomates</p>
+              </hgroup>
             </li>
             <li>
               <Image src="/bokits/bokits_cards/meal_11_rm.png" alt="Meal" width="200" height="138" />
@@ -100,13 +209,15 @@ export default function Home() {
             </li>
             <li>
               <Image src="/bokits/bokits_cards/meal_5_rm.png" alt="Meal" width="200" height="138" />
-              <h3>West Indies</h3>
               <p className="price">8€</p>
-              <p className="recipe">Boeuf haché, Jambon, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates</p>
+              <hgroup>
+                <h3>West Indies</h3>
+                <p className="recipe">Boeuf haché, Jambon, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates</p>
+              </hgroup>
             </li>
-          </ul>
+          </ul> */}
         </section>
-        <section className="surface carousel-container">
+        {/* <section className="surface carousel-container">
           <Image src="/assets/leave.png" alt="leave" height="180" width="120" />
           <h2>Nos boissons</h2>
           <div className="carousel">
@@ -125,7 +236,7 @@ export default function Home() {
               <li><Image src="/drinks/drinks_cards/drink_12.png" alt="Bokit" width="148" height="120" /></li>
             </ul>
           </div>
-        </section>
+        </section> */}
         <section className="surface satisfaction">
           <hgroup>
             <h2>Votre satisfaction notre priorité</h2>

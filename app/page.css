@@ -9,27 +9,6 @@ footer {
   padding: 24px;
 }
 
-header {
-  grid-template-columns: repeat(3, 1fr);
-  align-content: center;
-}
-
-header nav a {
-  text-decoration: none;
-  color: var(--contrast-hue);
-}
-
-header > img {
-  border-radius: 50%;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
 main {
   display: grid;
   text-align: center;
@@ -37,29 +16,52 @@ main {
   gap: 24px;
 }
 
-main > img {
-  margin: 64px 0 0 0;
+main > header > hr {
+  width: 400px;
+  opacity: 0.8;
 }
 
-main > hgroup {
+main > header {
   display: grid;
   padding: 28px 0 0 0;
   position: relative;
 }
 
-main > hgroup > h1 {
+main > header > h1 {
   font-size: 3.2rem;
 }
 
-main > hgroup > h2 {
-  font-size: 2.8rem;
+main > header > h2 {
+  font-size: 2rem;
+  margin: 0 0 110px 0;
 }
 
-main > hgroup > img {
+main > header > img {
   position: absolute;
   top: -8px;
   left: 50%;
   transform: translateX(-20%);
+}
+
+.image-container {
+  display: grid;
+  place-content: center;
+}
+
+.image-container > img {
+  grid-area: 1 / 1;
+}
+
+.image-container > img:first-of-type {
+  z-index: 1;
+  justify-self: center;
+  border-radius: 50%;
+  transform: translateY(-35%);
+  border: 6px solid var(--background);
+}
+
+.image-container > img:last-of-type {
+  border-radius: 24px;
 }
 
 #menus article {
@@ -97,39 +99,47 @@ main > hgroup > img {
 
 .card-list > li {
   display: grid;
-  gap: 16px;
-  padding: 16px;
+  /* padding: 16px; */
   background-color: var(--surface);
   border-radius: var(--radius);
-  grid-auto-rows: 80px 28px auto;
 }
 
-.card-list > li > h3 {
-  justify-self: left;
+.card-list > li > header {
+  display: grid;
+  padding: 0;
+
+  > * {
+    grid-area: 1 / 1;
+  }
+
+  > img {
+    transform: translate(-30px, -20px);
+  }
 }
 
-.recipe {
-  text-align: left;
-  text-wrap: balance;
+.card-list > header > img {
+  place-self: start start;
 }
 
-.card-list > li img {
-  grid-column: 1 / span 2;
-  transform-origin: bottom right;
-  transform: translate(-48px, -48px);
+.card-list > li > hgroup {
+  text-align: start;
+  padding: 8px 16px;
 }
-
-/* #sandwichs {
-  padding: 0 100px;
-} */
 
 .price {
+  justify-self: right;
   font-size: 20px;
   font-weight: 600;
+  padding: 8px 16px;
+  place-self: start end;
   color: var(--accent);
+  background-color: var(--background);
+  box-shadow: 0 0 0 8px var(--background);
+  border: 2px solid var(--accent);
+  border-radius: 0 12px 0 12px;
 }
 
-.carousel-container {
+/* .carousel-container {
   position: relative;
 }
 
@@ -177,7 +187,7 @@ main > hgroup > img {
   justify-content: center;
   align-items: center;
   min-height: 200px;
-}
+} */
 
 .satisfaction > hgroup {
   display: grid;
@@ -201,7 +211,7 @@ footer > h2 {
 }
 
 @media (max-width: 900px) {
-  main > img {
+  main > .image-container > img:last-of-type {
     width: 95vw;
     object-fit: cover;
   }

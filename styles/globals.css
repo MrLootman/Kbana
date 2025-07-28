@@ -4,7 +4,7 @@
 }
 
 :root {
-  --hue: 96deg;
+  --hue: 105deg;
   --contrast-hue: calc(var(--hue) + 180deg);
   --radius: 8px;
   --radius-lg: calc(var(--radius) * 3);
@@ -14,11 +14,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: oklch(90% 17% var(--hue));
+    --accent: oklch(90% 20% var(--hue));
     --on-accent: oklch(30% 17% var(--hue));
     --background: oklch(10% 10% var(--contrast-hue));
     --on-background: oklch(95% 10% var(--contrast-hue));
-    --surface: oklch(20% 5% var(--contrast-hue));
+    --surface: oklch(25% 5% var(--contrast-hue));
   }
 }
 
