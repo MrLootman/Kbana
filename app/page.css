@@ -139,56 +139,6 @@ main > header > img {
   border-radius: 0 12px 0 12px;
 }
 
-/* .carousel-container {
-  position: relative;
-}
-
-.carousel-container > img {
-  position: absolute;
-  top: 0px;
-  left: 32px;
-}
-
-.carousel {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: 700px;
-  overflow: hidden;
-  display: flex;
-}
-
-.carousel > * {
-  flex: 0 0 100%;
-}
-
-.carousel .group {
-  display: flex;
-  gap: 20px;
-  padding-right: 20px;
-  will-change: transform;
-  animation: scrolling 10s linear infinite;
-}
-
-.carousel .group img {
-  object-fit: contain;
-}
-
-.carousel:hover .group {
-  animation-play-state: paused;
-}
-
-.carousel > .group > li {
-  width: 100%;
-  color: white;
-  border-radius: 24px;
-  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
-  padding: 20px;
-  font-size: xx-large;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-} */
-
 .satisfaction > hgroup {
   display: grid;
   gap: 24px;
