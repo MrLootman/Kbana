@@ -113,7 +113,7 @@ export default function Home() {
             <p>Prix du plat + 3 €</p>
           </article>
           <article className="surface outline">
-            <h3>Ti Moun'</h3>
+            <h3>Ti Moun&apos;</h3>
             <p>
               <strong>Petit Bokit (Gwada, Cuba, Dominica, Montserrat)</strong> + <strong>Petite frite</strong> + <strong>Caprisun ou Cristalline</strong>
             </p>
