@@ -8,7 +8,7 @@
   --contrast-hue: calc(var(--hue) + 180deg);
   --radius: 8px;
   --radius-lg: calc(var(--radius) * 3);
-  color-scheme: light dark;
+  color-scheme: dark;
   accent-color: var(--accent);
 }
 
@@ -52,15 +52,12 @@ html {
 }
 
 body {
-  background: radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-size: 16px 16px;
   background-color: var(--background);
   color: var(--on-background);
   display: grid;
   gap: 24px;
+  overflow-x: clip;
 }
 
 a {

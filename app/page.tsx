@@ -88,27 +88,22 @@ const meals = [
   }
 ];
 
-
-// <Image src="/bokits/bokits_cards/meal_11_rm.png" alt="Meal" width="200" height="138" />
-// <h3>Gwada</h3>
-// <p className="price">8€</p>
-// <p className="recipe">Jambon, Emmental, Tomates, Salade</p>
-
 export default function Home() {
   return (
     <>
       <main>
+        <Image src="/assets/palm-leaf.jpg" alt="Palm leaf" width="500" height="700" />
         <header>
           <h1>La Kbana Bokit</h1>
           <hr />
           <h2>Spécialités Caraïbéennes</h2>
-          <Image src="/hibiscus.png" alt="Hibiscus flower" width="100" height="80" />
         </header>
         <div className="image-container">
           <Image src="/logo.png" alt="logo" width="220" height="220" />
           <Image src="/bokits/meal_1.jpg" alt="guadelupean sandwich" width="900" height="600" />
         </div>
         <section id="menus">
+          <Image src="/assets/hibiscus.webp" alt="Hibiscus flower" width="480" height="480" />
           <h2>Menus</h2>
           <article className="surface outline">
             <p>
@@ -136,10 +131,29 @@ export default function Home() {
             })}
           </ul>
         </section>
+
+        <div className="google-reviews" aria-hidden="true">
+          <Image src="/assets/google-logo.webp" alt="Google logo" width="60" height="60" />
+          <p className="note">4,7</p>
+          <span></span>
+          <a href="https://google.com/search?sca_esv=e948bafec9f39f8c&amp;sxsrf=AE3TifPz8O6EGrAfp61P6Mk-lQwKyfLdew:1753794756728&amp;uds=AOm0WdE2fekQnsyfYEw8JPYozOKzqpex0tSvmKdffwhThOpjgxvZnCM0wVyGTSXAVA7JF1spOSJqpFyAOFHCS0Y_YoQmW_CTt6WQWUng5X3xThXXgQvlqevkU-6nMRNyb-t3A3QEvGeD8FPtqIXf3I2vvw4k_cxctA&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk2TGBs_hLU9kmJiHGuYdnVBfmTyVWRf3QD2YQxH2wz1TgWVets%3D&amp;q=KBANA+BOKIT+Avis&amp;sa=X&amp;ved=2ahUKEwj2k-_LkuKOAxUoT6QEHYYYJUEQ3PALegQITRAF" target="no-referrer">204&nbsp;avis</a>
+        </div>
         <section className="surface satisfaction">
           <hgroup>
             <h2>Votre satisfaction notre priorité</h2>
-            <p>Votre satisfaction est notre priorité absolue. Nous mettons tout en œuvre pour vous offrir une expérience culinaire unique et mémorable. N&apos;hésitez pas à nous faire part de vos impressions et suggestions, car votre avis compte énormément pour nous.</p>
+
+            <ul className="review-list">
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+
             <a className="surface outline" href="https://www.google.com/search?sca_esv=6a136238722af36a&sxsrf=AE3TifPmFALXgbGSAIcN9yONqLHXbt_RJg:1752668512107&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk3NnKjcNfMQOajADYVtpwzZ6i8BuAzIoHSqaA9IIZpnmYHQ_gb-JRugDjozJEqTHcXZ87HP&q=KBANA+BOKIT+Avis&sa=X&ved=2ahUKEwjo28qAr8GOAxVHVaQEHV8dEGAQ0bkNegQISBAE&biw=1229&bih=584&dpr=1.56" target="_blank">Ajoutez un avis Google</a>
           </hgroup>
         </section>
