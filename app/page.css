@@ -14,6 +14,7 @@ main {
   place-items: center;
   gap: 16px;
   position: relative;
+  overflow-x: clip;
 }
 
 main > img:first-of-type {
@@ -37,16 +38,17 @@ main > header > hr {
 
 main > header > h1 {
   font-size: 3.2rem;
+  animation: appear 1.5s ease;
 }
 
 main > header > h2 {
   font-size: 2rem;
   margin: 0 0 110px 0;
+  animation: slide 2.5s ease;
 }
 
 .image-container {
   display: grid;
-  place-content: center;
 }
 
 .image-container > img {
@@ -78,7 +80,8 @@ main > header > h2 {
 }
 
 #menus article {
-  max-width: 700px;
+  height: 200px;
+  max-width: 500px;
   margin-inline: auto;
 }
 
@@ -115,6 +118,10 @@ main > header > h2 {
   display: grid;
   background-color: var(--surface);
   border-radius: var(--radius);
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .card-list > li > header {
@@ -126,7 +133,8 @@ main > header > h2 {
   }
 
   > img {
-    transform: translate(-30px, -20px);
+    animation-name: bokit-slide;
+    animation-timeline: view();
   }
 }
 
@@ -310,28 +318,57 @@ footer > h2 {
 
 @media (max-width: 900px) {
   main > .image-container > img:last-of-type {
-    width: 95vw;
+    width: 100%;
+    padding-right: 8px;
     object-fit: cover;
   }
 
   .card-list {
     grid-template-columns: 1fr;
   }
-
-  .carousel {
-    max-width: 300px;
-  }
-
-  .carousel-container > img {
-    display: none;
-  }
 }
 
-@keyframes scrolling {
+/* @keyframes scrolling {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
+  }
+} */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bokit-slide {
+  from {
+    opacity: 0;
+    transform: translate(-50px, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-30px, -20px);
   }
 }

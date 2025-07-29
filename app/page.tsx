@@ -106,10 +106,18 @@ export default function Home() {
           <Image src="/assets/hibiscus.webp" alt="Hibiscus flower" width="480" height="480" />
           <h2>Menus</h2>
           <article className="surface outline">
+            <h3>Classique</h3>
             <p>
               <strong>Pain Bokit ou Agoulou</strong> + <strong>Accompagnement</strong> + <strong>Boisson</strong>
             </p>
             <p>Prix du plat + 3 €</p>
+          </article>
+          <article className="surface outline">
+            <h3>Ti Moun'</h3>
+            <p>
+              <strong>Petit Bokit (Gwada, Cuba, Dominica, Montserrat)</strong> + <strong>Petite frite</strong> + <strong>Caprisun ou Cristalline</strong>
+            </p>
+            <p>7 €</p>
           </article>
         </section>
         <section id="sandwichs">
@@ -144,7 +152,8 @@ export default function Home() {
 
             <ul className="review-list">
               <li>
-
+                {/* <Image src="" */}
+                <Image src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
               </li>
               <li>
 
