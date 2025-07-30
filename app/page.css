@@ -294,7 +294,6 @@ main > header > h2 {
 .satisfaction > hgroup {
   display: grid;
   gap: 32px;
-  margin: 0 10vw;
 }
 
 .satisfaction > hgroup > p {
@@ -318,13 +317,22 @@ footer > h2 {
 
 @media (max-width: 900px) {
   main > .image-container > img:last-of-type {
-    width: 100%;
+    max-width: 100%;
     padding-right: 8px;
     object-fit: cover;
   }
 
   .card-list {
     grid-template-columns: 1fr;
+  }
+
+  .satisfaction li {
+    width: 100vw;
+    animation-name: none;
+  }
+
+  .review-list li {
+    width: 80vw;
   }
 }
 

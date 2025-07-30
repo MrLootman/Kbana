@@ -152,7 +152,6 @@ export default function Home() {
 
             <ul className="review-list">
               <li>
-                {/* <Image src="" */}
                 <Image src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
               </li>
               <li>
