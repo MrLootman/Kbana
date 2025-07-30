@@ -325,13 +325,27 @@ footer > h2 {
     grid-template-columns: 1fr;
   }
 
-  .satisfaction li {
-    width: 100vw;
-    animation-name: none;
+  .satisfaction {
+    /* width: 100vw; */
   }
 
   .review-list li {
     width: 80vw;
+    --translate: 0px;
+  }
+
+  .review-list li:nth-child(1) {
+    --translate: 0px;
+    top: 8px;
+  }
+
+  .review-list li:nth-child(2) {
+    --translate: 0px;
+    top: 32px;
+  }
+  .review-list li:nth-child(3) {
+    --translate: 0px;
+    top: 64px;
   }
 }
 
