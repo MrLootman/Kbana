@@ -318,7 +318,6 @@ footer > h2 {
 @media (max-width: 900px) {
   main > .image-container > img:last-of-type {
     max-width: 100%;
-    padding-right: 8px;
     object-fit: cover;
   }
 
@@ -336,24 +335,13 @@ footer > h2 {
   }
 }
 
-/* @keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-
 @keyframes appear {
   from {
-    opacity: 0;
-    scale: 0.8;
+    transform: translateY(20px);
   }
 
   to {
-    opacity: 1;
-    scale: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -372,7 +360,7 @@ footer > h2 {
 @keyframes bokit-slide {
   from {
     opacity: 0;
-    transform: translate(-50px, -20px);
+    transform: translate(-15px, -20px);
   }
 
   to {
