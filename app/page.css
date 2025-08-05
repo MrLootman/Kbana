@@ -115,6 +115,7 @@ main > header > h2 {
 
 .card-list > li {
   display: grid;
+  grid-template-rows: auto 1fr;
   background-color: var(--surface);
   border-radius: var(--radius);
   animation-name: appear;
