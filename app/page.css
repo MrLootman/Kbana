@@ -259,8 +259,18 @@ main > header > h2 {
 }
 
 .review-list li {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 3fr 4fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+    "avatar identity google"
+    "stars stars stars"
+    "comment comment comment";
+
   width: 400px;
-  height: 300px;
+  height: 280px;
+  padding: 12px;
   border-radius: 16px;
   border: 1px solid black;
   position: sticky;
@@ -270,6 +280,47 @@ main > header > h2 {
   animation-timeline: view();
   animation-name: stack;
   --translate: 0px;
+}
+
+.review-list > li > p:first-of-type {
+  background-color: rgb(124, 31, 163);
+  grid-area: avatar;
+  align-self: flex-start;
+  padding: 12px 20px;
+  border-radius: 50%;
+}
+
+.review-list > li > p:last-of-type {
+  grid-column: 1 / span 3;
+  text-align: start;
+  color: black;
+}
+
+.author {
+  place-items: flex-start;
+}
+
+.author p:first-of-type {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.author p:last-of-type {
+  color: rgb(58, 58, 58);
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.review-list > li > img {
+  justify-self: flex-end;
+}
+
+.stars {
+  grid-area: stars;
+  place-self: start;
 }
 
 @keyframes stack {
@@ -324,28 +375,24 @@ footer > h2 {
     grid-template-columns: 1fr;
   }
 
-  .satisfaction {
-    /* width: 100vw; */
-  }
-
   .review-list li {
     width: 80vw;
     --translate: 0px;
   }
 
   .review-list li:nth-child(1) {
-    --translate: 0px;
-    top: 8px;
+    top: 4px;
+    --translate: -24px;
   }
 
   .review-list li:nth-child(2) {
-    --translate: 0px;
-    top: 32px;
+    top: 8px;
+    --translate: -12px;
   }
 
   .review-list li:nth-child(3) {
+    top: 12px;
     --translate: 0px;
-    top: 64px;
   }
 }
 

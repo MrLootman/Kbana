@@ -152,14 +152,59 @@ export default function Home() {
 
             <ul className="review-list">
               <li>
-                <Image src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
-              </li>
-              <li>
+                <p>P</p>
+
+                <div className="author">
+                  <p>Jean-Philippe</p>
+                  <p>14 Août 2025</p>
+                </div>
+
+                <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
+
+                <div className="stars">
+                  <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+                </div>
+
+                <p>J'ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n'a posé de problème à personne j'ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
 
               </li>
               <li>
+                <p>P</p>
+
+                <div className="author">
+                  <p>Jean-Philippe</p>
+                  <p>14 Août 2025</p>
+                </div>
+
+                <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
+
+                <div className="stars">
+                  <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+                </div>
+
+                <p>J'ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n'a posé de problème à personne j'ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
 
               </li>
+              <li>
+                <p>P</p>
+
+                <div className="author">
+                  <p>Jean-Philippe</p>
+                  <p>14 Août 2025</p>
+                </div>
+
+                <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
+
+                <div className="stars">
+                  <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+                </div>
+
+                <p>J'ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n'a posé de problème à personne j'ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
+
+              </li>
+
+
+
             </ul>
 
             <a className="surface outline" href="https://www.google.com/search?sca_esv=6a136238722af36a&sxsrf=AE3TifPmFALXgbGSAIcN9yONqLHXbt_RJg:1752668512107&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk3NnKjcNfMQOajADYVtpwzZ6i8BuAzIoHSqaA9IIZpnmYHQ_gb-JRugDjozJEqTHcXZ87HP&q=KBANA+BOKIT+Avis&sa=X&ved=2ahUKEwjo28qAr8GOAxVHVaQEHV8dEGAQ0bkNegQISBAE&biw=1229&bih=584&dpr=1.56" target="_blank">Ajoutez un avis Google</a>
