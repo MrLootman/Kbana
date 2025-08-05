@@ -165,7 +165,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
+                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
               </li>
               <li>
                 <p>P</p>
@@ -181,7 +181,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
+                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
               </li>
               <li>
                 <p>P</p>
@@ -197,7 +197,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d'eau pour le loulou.</p>
+                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
               </li>
 
 
