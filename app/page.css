@@ -420,12 +420,10 @@ footer > h2 {
 
 @keyframes bokit-slide {
   from {
-    opacity: 0;
     transform: translate(-15px, -20px);
   }
 
   to {
-    opacity: 1;
     transform: translate(-30px, -20px);
   }
 }
