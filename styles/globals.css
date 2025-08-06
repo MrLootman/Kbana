@@ -3,6 +3,10 @@
   inherits: true;
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
 :root {
   --hue: 105deg;
   --contrast-hue: calc(var(--hue) + 180deg);
@@ -37,12 +41,10 @@ html {
 }
 
 body {
-  background-size: 16px 16px;
   background-color: var(--background);
   color: var(--on-background);
   display: grid;
   gap: 24px;
-  overflow-x: clip;
 }
 
 a {

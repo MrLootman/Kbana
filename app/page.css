@@ -14,6 +14,7 @@ main {
   place-items: center;
   gap: 16px;
   position: relative;
+  overflow-x: hidden;
 }
 
 main > img:first-of-type {
@@ -367,7 +368,7 @@ footer > h2 {
 
 @media (max-width: 900px) {
   main > .image-container > img:last-of-type {
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
