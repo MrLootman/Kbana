@@ -3,10 +3,6 @@
   inherits: true;
 }
 
-/* {
-  outline: 1px solid red;
-} */
-
 :root {
   --hue: 105deg;
   --contrast-hue: calc(var(--hue) + 180deg);
