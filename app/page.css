@@ -407,7 +407,19 @@ footer > h2 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
+  main > header > h1 {
+    font-size: clamp(2rem, -2.7143rem + 18.2857vw, 3rem);
+  }
+
+  main > header > h2 {
+    font-size: clamp(1rem, -2.7143rem + 18.2857vw, 3rem);
+  }
+
+  main > header > hr {
+    width: 100px;
+  }
+
   main > img:first-of-type {
     width: 300px;
     opacity: 0.3;
