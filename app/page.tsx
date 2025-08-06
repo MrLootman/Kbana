@@ -180,7 +180,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>un vrai délice, je n'en ai jamais mangé d'aussi bon aux Antilles ni ailleurs...</p>
+                <p>un vrai délice, je n&apos;en ai jamais mangé d&apos;aussi bon aux Antilles ni ailleurs...</p>
               </li>
               <li>
                 <p>P</p>
@@ -196,7 +196,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>Propriétaire super sympathique et souriant. On a passé un superbe moment pour l'anniversaire de mon fils et surtout on a trop bien mangé 😋 </p>
+                <p>Propriétaire super sympathique et souriant. On a passé un superbe moment pour l&apos;anniversaire de mon fils et surtout on a trop bien mangé 😋 </p>
               </li>
 
 
