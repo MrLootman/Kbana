@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kbana Bokit",
     description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits maison, garnis de saveurs authentiques des îles. Ambiance chaleureuse garantie !",
-  }
+  },
 };
 
 export default function RootLayout({
