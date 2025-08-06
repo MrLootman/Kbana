@@ -42,6 +42,7 @@ body {
   color: var(--on-background);
   display: grid;
   gap: 24px;
+  overflow-x: clip;
 }
 
 a {
