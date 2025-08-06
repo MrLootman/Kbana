@@ -169,10 +169,9 @@ export default function Home() {
               </li>
               <li>
                 <p>P</p>
-
                 <div className="author">
-                  <p>Jean-Philippe</p>
-                  <p>14 Août 2025</p>
+                  <p>Pages Jaunes</p>
+                  <p>29 Juillet 2021</p>
                 </div>
 
                 <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
@@ -181,14 +180,14 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
+                <p>un vrai délice, je n'en ai jamais mangé d'aussi bon aux Antilles ni ailleurs...</p>
               </li>
               <li>
                 <p>P</p>
 
                 <div className="author">
-                  <p>Jean-Philippe</p>
-                  <p>14 Août 2025</p>
+                  <p>Phanie973</p>
+                  <p>24 Juin 2021</p>
                 </div>
 
                 <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
@@ -197,7 +196,7 @@ export default function Home() {
                   <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
                 </div>
 
-                <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
+                <p>Propriétaire super sympathique et souriant. On a passé un superbe moment pour l'anniversaire de mon fils et surtout on a trop bien mangé 😋 </p>
               </li>
 
 
