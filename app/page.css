@@ -422,8 +422,64 @@ footer > table {
     object-fit: cover;
   }
 
+  #menus article {
+    max-width: 80vw;
+    min-height: 200px;
+  }
+
   .card-list {
     grid-template-columns: 1fr;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  td {
+    margin-bottom: 1rem;
+  }
+
+  td:nth-of-type(1)::before {
+    content: "Horaires : ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  td:nth-of-type(2)::before {
+    content: "Coordonnées : ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  td:nth-of-type(3)::before {
+    content: "Options de paiement : ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  td:nth-of-type(4)::before {
+    content: "Services : ";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
   }
 }
 
