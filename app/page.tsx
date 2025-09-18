@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <Image src="/assets/palm-leaf.jpg" alt="Palm leaf" width="500" height="700" />
+        <Image src="/assets/palm-leaf.jpg" alt="Palm leaf" width="467" height="700" />
         <header>
           <h1>La Kbana Bokit</h1>
           <hr />
