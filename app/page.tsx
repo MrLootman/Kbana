@@ -144,15 +144,13 @@ export default function Home() {
           </ul>
         </section>
 
-        <div className="google-reviews" aria-hidden="true">
-          <Image src="/assets/google-logo.webp" alt="Google logo" width="60" height="60" />
+        <div className="google-reviews" aria-label="Avis Google">
+          <Image src="/assets/google-logo.webp" alt="Logo de l'entreprise Google" width="60" height="60" />
           <p className="note">4,7</p>
-          <span></span>
-          <a href="https://google.com/search?sca_esv=e948bafec9f39f8c&amp;sxsrf=AE3TifPz8O6EGrAfp61P6Mk-lQwKyfLdew:1753794756728&amp;uds=AOm0WdE2fekQnsyfYEw8JPYozOKzqpex0tSvmKdffwhThOpjgxvZnCM0wVyGTSXAVA7JF1spOSJqpFyAOFHCS0Y_YoQmW_CTt6WQWUng5X3xThXXgQvlqevkU-6nMRNyb-t3A3QEvGeD8FPtqIXf3I2vvw4k_cxctA&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk2TGBs_hLU9kmJiHGuYdnVBfmTyVWRf3QD2YQxH2wz1TgWVets%3D&amp;q=KBANA+BOKIT+Avis&amp;sa=X&amp;ved=2ahUKEwj2k-_LkuKOAxUoT6QEHYYYJUEQ3PALegQITRAF" target="no-referrer">204&nbsp;avis</a>
+          <span aria-hidden="true" />
+          <a href="https://google.com/search?sca_esv=e948bafec9f39f8c&amp;sxsrf=AE3TifPz8O6EGrAfp61P6Mk-lQwKyfLdew:1753794756728&amp;uds=AOm0WdE2fekQnsyfYEw8JPYozOKzqpex0tSvmKdffwhThOpjgxvZnCM0wVyGTSXAVA7JF1spOSJqpFyAOFHCS0Y_YoQmW_CTt6WQWUng5X3xThXXgQvlqevkU-6nMRNyb-t3A3QEvGeD8FPtqIXf3I2vvw4k_cxctA&amp;si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk2TGBs_hLU9kmJiHGuYdnVBfmTyVWRf3QD2YQxH2wz1TgWVets%3D&amp;q=KBANA+BOKIT+Avis&amp;sa=X&amp;ved=2ahUKEwj2k-_LkuKOAxUoT6QEHYYYJUEQ3PALegQITRAF" target="_blank" rel="noopener noreferrer">204&nbsp;avis</a>
         </div>
         <section className="surface satisfaction">
-          <h2>Votre satisfaction notre priorité</h2>
-
           <ul className="review-list">
             <li>
               <p>P</p>
@@ -164,8 +162,8 @@ export default function Home() {
 
               <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
 
-              <div className="stars">
-                <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+              <div className="stars" aria-label="Ce client a donné une note de cinq étoiles sur cinq">
+                <Image src="/assets/reviews-stars.webp" alt="Etoiles représentant les notes des utilisateurs" width="80" height="15" />
               </div>
 
               <p>J&apos;ai pu découvrir ce restaurant, je suis venu avec mon chiot ça n&apos;a posé de problème à personne j&apos;ai même été très bien accueilli avec une gamelle d&apos;eau pour le loulou.</p>
@@ -179,8 +177,8 @@ export default function Home() {
 
               <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
 
-              <div className="stars">
-                <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+              <div className="stars" aria-label="Ce client a donné une note de cinq étoiles sur cinq">
+                <Image src="/assets/reviews-stars.webp" alt="Etoiles représentant les notes des utilisateurs" width="80" height="15" />
               </div>
 
               <p>un vrai délice, je n&apos;en ai jamais mangé d&apos;aussi bon aux Antilles ni ailleurs...</p>
@@ -195,17 +193,13 @@ export default function Home() {
 
               <Image src="/assets/google-logo.webp" alt="Google logo" width="16" height="16" />
 
-              <div className="stars">
-                <Image className="" src="/assets/reviews-stars.webp" alt="" width="80" height="15" />
+              <div className="stars" aria-label="Cette cliente a donné une note de cinq étoiles sur cinq">
+                <Image src="/assets/reviews-stars.webp" alt="Etoiles représentant les notes des utilisateurs" width="80" height="15" />
               </div>
 
               <p>Propriétaire super sympathique et souriant. On a passé un superbe moment pour l&apos;anniversaire de mon fils et surtout on a trop bien mangé 😋 </p>
             </li>
-
-
-
           </ul>
-
           <a className="surface outline" href="https://www.google.com/search?sca_esv=6a136238722af36a&sxsrf=AE3TifPmFALXgbGSAIcN9yONqLHXbt_RJg:1752668512107&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0o_2yfIvzgS4dM4J0Iyzk3NnKjcNfMQOajADYVtpwzZ6i8BuAzIoHSqaA9IIZpnmYHQ_gb-JRugDjozJEqTHcXZ87HP&q=KBANA+BOKIT+Avis&sa=X&ved=2ahUKEwjo28qAr8GOAxVHVaQEHV8dEGAQ0bkNegQISBAE&biw=1229&bih=584&dpr=1.56" target="_blank">Ajoutez un avis Google</a>
         </section>
       </main>

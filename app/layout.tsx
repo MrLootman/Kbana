@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kbana Bokit",
+  title: "Kbana Bokit - Restaurant Caraïbéen",
   description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits maison, garnis de saveurs authentiques des îles. Ambiance chaleureuse garantie !",
   openGraph: {
     title: "Kbana Bokit",

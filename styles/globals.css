@@ -13,6 +13,7 @@
   --background: oklch(10% 10% var(--contrast-hue));
   --on-background: oklch(95% 10% var(--contrast-hue));
   --surface: oklch(25% 5% var(--contrast-hue));
+  --hyperlink: #7a9eff;
   color-scheme: dark;
   accent-color: var(--accent);
 }

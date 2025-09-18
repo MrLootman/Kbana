@@ -186,7 +186,7 @@ main > header > h2 {
   display: flex;
   align-items: center;
   gap: 24px;
-  background-color: var(--on-background);
+  background: #2b2b2b;
   border-radius: 16px;
   line-height: 20px;
 
@@ -263,12 +263,14 @@ main > header > h2 {
   }
 
   > a {
-    color: var(--background);
+    color: var(--hyperlink);
+    font-weight: 600;
   }
 }
 
 .satisfaction {
-  background-color: var(--on-background);
+  padding-top: 100px;
+  background-color: #2b2b2b;
 }
 
 .review-list {
@@ -331,7 +333,6 @@ main > header > h2 {
   font-size: 12px;
   margin: 0;
   padding: 0;
-  opacity: 0.7;
 }
 
 .review-list > li > img {
@@ -375,7 +376,7 @@ main > header > h2 {
   width: 100px;
   margin: auto;
   transition: all 250ms ease;
-  color: rgb(53, 53, 53);
+  color: var(--hyperlink);
 
   &:hover {
     border-color: black;
@@ -454,32 +455,31 @@ footer > table {
     margin-bottom: 1rem;
   }
 
-  td:nth-of-type(1)::before {
-    content: "Horaires : ";
+  td::before {
     font-weight: bold;
     display: block;
     margin-bottom: 0.3rem;
   }
 
-  td:nth-of-type(2)::before {
-    content: "Coordonnées : ";
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.3rem;
+  td:nth-of-type(1)::before {
+    content: "Horaires : ";
+  }
+
+  td:nth-of-type(2) {
+    a {
+      color: var(--hyperlink);
+    }
+    &::before {
+      content: "Coordonnées : ";
+    }
   }
 
   td:nth-of-type(3)::before {
     content: "Options de paiement : ";
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.3rem;
   }
 
   td:nth-of-type(4)::before {
     content: "Services : ";
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.3rem;
   }
 }
 
