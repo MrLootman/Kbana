@@ -415,6 +415,10 @@ footer > table {
     padding: 1rem;
     vertical-align: top;
   }
+
+  td:nth-child(2) a {
+    color: var(--hyperlink);
+  }
 }
 
 @media (max-width: 900px) {
@@ -465,13 +469,8 @@ footer > table {
     content: "Horaires : ";
   }
 
-  td:nth-of-type(2) {
-    a {
-      color: var(--hyperlink);
-    }
-    &::before {
-      content: "Coordonnées : ";
-    }
+  td:nth-of-type(2)::before {
+    content: "Coordonnées : ";
   }
 
   td:nth-of-type(3)::before {
