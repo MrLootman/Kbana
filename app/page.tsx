@@ -101,10 +101,10 @@ export default function Home() {
         </header>
         <div className="image-container">
           <Image src="/logo.png" alt="logo" width="220" height="220" />
-          <Image src="/bokits/meal_1_desktop.jpg" alt="Bokit, sandwich des caraïbes" width="900" height="675" />
+          <Image src="/bokits/meal_1.jpg" alt="Bokit, sandwich des caraïbes" width="900" height="675" />
         </div>
         <section id="menus">
-          <Image src="/assets/hibiscus.webp" alt="Hibiscus flower" width="480" height="480" />
+          <Image src="/assets/hibiscus.webp" alt="Fleur d'hibiscus" width="480" height="480" />
           <h2><strong>Découvrez</strong> nos saveurs</h2>
           <article className="surface outline">
             <h3>Classique</h3>
