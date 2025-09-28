@@ -422,6 +422,12 @@ footer > table {
   }
 }
 
+footer > nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
 @media (max-width: 900px) {
   main > .image-container > img:last-of-type {
     width: 100%;

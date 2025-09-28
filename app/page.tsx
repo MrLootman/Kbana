@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./page.css";
 import Image from "next/image";
 
@@ -256,6 +257,18 @@ export default function Home() {
             </tr>
           </tbody>
         </table>
+
+        <nav>
+          <Link href="https://www.facebook.com/p/Kbana-Bokit-100048655524168/" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/facebook.png" alt="Icône Facebook" width="50" height="50" />
+          </Link>
+          <Link href="https://www.instagram.com/p/CYDCmgsIfY1/" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/instagram.png" alt="Icône Instagram" width="50" height="50" />
+          </Link>
+          <Link href="https://www.tiktok.com/@kbanabokit" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/tik-tok.png" alt="Icône Tik Tok" width="50" height="50" />
+          </Link>
+        </nav>
       </footer >
     </>
   );
