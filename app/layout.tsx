@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kbana Bokit - Restaurant Caraïbéen",
-  description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits maison, garnis de saveurs authentiques des îles. Ambiance chaleureuse garantie !",
+  description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits maison, garnis de saveurs authentiques des îles. Sur place ou à emporter. Ambiance chaleureuse garantie !",
   openGraph: {
     title: "Kbana Bokit",
-    description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits, garnis de saveurs authentiques des îles. Ambiance chaleureuse garantie !",
+    description: "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits, garnis de saveurs authentiques des îles. Sur place ou à emporter. Ambiance chaleureuse garantie !",
   },
   verification: {
     google: "b853iy102RzfqQdYjFxJXofkliMuILlTxayYr3grOlo"

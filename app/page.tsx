@@ -93,18 +93,18 @@ export default function Home() {
   return (
     <>
       <main>
-        <Image src="/assets/palm-leaf.jpg" alt="Palm leaf" width="467" height="700" />
+        <Image src="/assets/palm-leaf.jpg" alt="Palm leaf" width="467" height="700" aria-hidden="true" />
         <header>
           <h1>La Kbana Bokit</h1>
           <hr />
           <h2>Spécialités Caraïbéennes</h2>
         </header>
         <div className="image-container">
-          <Image src="/logo.png" alt="logo" width="220" height="220" />
-          <Image src="/bokits/meal_1.jpg" alt="Bokit, sandwich des caraïbes" width="900" height="675" />
+          <Image src="/logo.png" alt="Kbana Bokit - Rezé" width="220" height="220" />
+          <Image src="/bokits/meal_1.jpg" alt="Repas créole, acras garnis de frites" width="900" height="675" />
         </div>
         <section id="menus">
-          <Image src="/assets/hibiscus.webp" alt="Fleur d'hibiscus" width="480" height="480" />
+          <Image src="/assets/hibiscus.webp" alt="Fleur d'hibiscus" width="480" height="480" aria-hidden="true" />
           <h2><strong>Découvrez</strong> nos saveurs</h2>
           <article className="surface outline">
             <h3>Classique</h3>
