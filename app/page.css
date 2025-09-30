@@ -114,7 +114,6 @@ main > header > h2 {
 
 #menus article p:last-child,
 .price {
-  justify-self: right;
   font-size: 20px;
   font-weight: 600;
   padding: 8px 16px;
@@ -124,7 +123,12 @@ main > header > h2 {
   box-shadow: 0 0 0 8px var(--background);
   border: 2px solid var(--accent);
   border-radius: 12px 0px 12px 0px;
-  translate: 25px 18px;
+  translate: 26px 18px;
+}
+
+#menus article p:last-child {
+  width: 100px;
+  margin-left: calc(100% - 100px);
 }
 
 .menu-list {
@@ -161,7 +165,10 @@ main > header > h2 {
 
   > img {
     animation-name: bokit-slide;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     animation-timeline: view();
+    animation-range: entry 0% cover 100%;
   }
 }
 
