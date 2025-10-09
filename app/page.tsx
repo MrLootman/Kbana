@@ -225,11 +225,7 @@ export default function Home() {
           <tbody>
             <tr>
               <td>
-                <p>Mardi au Vendredi</p>
-                <p>12:00 - 14:00</p>
-                <p>19:00 - 22:00</p>
-                <br />
-                <p>Samedi</p>
+                <p>Jeudi au Samedi</p>
                 <p>19:00 - 22:00</p>
               </td>
 
