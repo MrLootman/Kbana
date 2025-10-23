@@ -1,93 +1,7 @@
 import Link from "next/link";
 import "./page.css";
 import Image from "next/image";
-
-const meals = [
-  {
-    name: "Cuba",
-    price: "8€",
-    recipe: "Jambon de poulet, Emmental, Salade, Tomates",
-    ingredients: ["Jambon de poulet", "Emmental", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_10_rm.png"
-  },
-  {
-    name: "Gwada",
-    price: "8€",
-    recipe: "Jambon, Emmental, Tomates, Salade",
-    ingredients: ["Jambon", "Emmental", "Tomates", "Salade"],
-    image: "/bokits/bokits_cards/meal_11_rm.png"
-  },
-  {
-    name: "Dominica",
-    price: "8€",
-    recipe: "Saucisse de poulet, Emmental, Salade, Tomates",
-    ingredients: ["Saucisse de poulet", "Emmental", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_5_rm.png"
-  },
-  {
-    name: "Montserrat",
-    price: "8€",
-    recipe: "Oeuf, Emmental, Tomates, Salade",
-    ingredients: ["Oeuf", "Emmental", "Tomates", "Salade"],
-    image: "/bokits/bokits_cards/meal_6_rm.png"
-  },
-  {
-    name: "Guyana",
-    price: "8€",
-    recipe: "Haricots rouge, Maïs, Avocat, Salade, Tomates",
-    ingredients: ["Haricots rouge", "Maïs", "Avocat", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_7_rm.png"
-  },
-  {
-    name: "Mada",
-    price: "8€",
-    recipe: "Poulet mariné (citron, aïl, persil, oignon), Emmental, Tomates, Salade",
-    ingredients: ["Poulet mariné", "Emmental", "Tomates", "Salade"],
-    image: "/bokits/bokits_cards/meal_8_rm.png"
-  },
-  {
-    name: "Jamaïca",
-    price: "8€",
-    recipe: "Poulet jerk (curcuma, gingembre, aïl, persil), Tomates, Salade",
-    ingredients: ["Poulet jerk", "Tomates", "Salade"],
-    image: "/bokits/bokits_cards/meal_9_rm.png"
-  },
-  {
-    name: "Sainte Lucia",
-    price: "8€",
-    recipe: "Boeuf haché, Tomates, Salade",
-    ingredients: ["Boeuf haché", "Tomates", "Salade"],
-    image: "/bokits/bokits_cards/meal_4_rm.png"
-  },
-  {
-    name: "Haïti",
-    price: "8€",
-    recipe: "Boeuf haché mariné (curcuma, gingembre, aïl, persil), Salade, Tomates",
-    ingredients: ["Boeuf haché mariné", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_11_rm.png"
-  },
-  {
-    name: "Antigua",
-    price: "8€",
-    recipe: "Morue, Salade, Tomates",
-    ingredients: ["Morue", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_9_rm.png"
-  },
-  {
-    name: "Antillaise",
-    price: "8€",
-    recipe: "Boeuf haché, Poulet, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates",
-    ingredients: ["Boeuf haché", "Poulet", "Saucisse de poulet", "Oeuf", "Emmental", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_4_rm.png"
-  },
-  {
-    name: "West Indies",
-    price: "8€",
-    recipe: "Boeuf haché, Jambon, Saucisse de poulet, Oeuf, Emmental, Salade, Tomates",
-    ingredients: ["Boeuf haché", "Jambon", "Saucisse de poulet", "Oeuf", "Emmental", "Salade", "Tomates"],
-    image: "/bokits/bokits_cards/meal_5_rm.png"
-  }
-];
+import { drinks, meals } from "@/lib/bokit";
 
 export default function Home() {
   return (
@@ -124,6 +38,15 @@ export default function Home() {
             <p>+ Caprisun ou Cristalline</p>
             <p>7 €</p>
           </article>
+          <article className="surface outline">
+            <h3>Étudiant</h3>
+            <p>
+              <strong>Bokit (Gwada, Cuba, Dominica, Montserrat)</strong>
+            </p>
+            <p>+ Frites</p>
+            <p>+ Boisson</p>
+            <p>7 €</p>
+          </article>
         </section>
         <section id="sandwichs">
           <h2><strong>Découvrez</strong> nos plats</h2>
@@ -139,6 +62,23 @@ export default function Home() {
                     <h3>{el.name}</h3>
                     <p className="recipe">{el.recipe}</p>
                   </hgroup>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+        <section id="drinks">
+          <h2><strong>Découvrez</strong> nos boissons</h2>
+          <ul className="card-list menu-list">
+            {drinks.map((el) => {
+              return (
+                <li key={el.name}>
+                  <header>
+                    <Image src={el.image} alt="Meal" width="200" height="138" />
+                  </header>
+                  {/* <hgroup>
+                    <h3>{el.name}</h3>
+                  </hgroup> */}
                 </li>
               )
             })}

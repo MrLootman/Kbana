@@ -79,7 +79,8 @@ main > header > h2 {
 }
 
 #menus > h2,
-#sandwichs > h2 {
+#sandwichs > h2,
+#drinks > h2 {
   font-size: 2.5rem;
   margin: 0 0 24px 0;
 
@@ -184,6 +185,22 @@ main > header > h2 {
 .price {
   border-radius: 0 12px;
   translate: 0;
+}
+
+/* Drinks */
+
+#drinks > ul > li > hgroup {
+  text-align: center;
+}
+
+#drinks > ul > li > header {
+  > img {
+    border-radius: 8px;
+    animation-name: none;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .google-reviews {
