@@ -44,7 +44,7 @@ export default function Home() {
               <strong>Bokit (Gwada, Cuba, Dominica, Montserrat)</strong>
             </p>
             <p>+ Frites</p>
-            <p>+ Boisson</p>
+            <p>+ Coca Cola ou Minuit Maid ou Cristalline</p>
             <p>7 €</p>
           </article>
         </section>
