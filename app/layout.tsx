@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kbana-bokit.vercel.app"),
   title: "Kbana Bokit - Restaurant Caraïbéen",
   description:
     "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits maison, garnis de saveurs authentiques des îles. Sur place ou à emporter. Ambiance chaleureuse garantie !",
