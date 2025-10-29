@@ -9,6 +9,15 @@ export const metadata: Metadata = {
     title: "Kbana Bokit",
     description:
       "Découvrez notre restaurant caraïbéen et savourez les meilleurs bokits, garnis de saveurs authentiques des îles. Sur place ou à emporter. Ambiance chaleureuse garantie !",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Restaurant Kbana Bokit",
+        type: "website",
+      },
+    ],
   },
   verification: {
     google: "b853iy102RzfqQdYjFxJXofkliMuILlTxayYr3grOlo",
